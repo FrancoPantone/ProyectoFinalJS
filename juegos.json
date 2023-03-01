@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "consola": "Playstation 4",
+        "titulo": "Mortal Kombat 11",
+        "precio": 5000,
+        "imagen": "mortalKombat11.jpeg"
+    },
+    {
+        "id": 2,
+        "consola": "Playstation 4",
+        "titulo":  "God of War Ragnarok",
+        "precio": 20000,
+        "imagen": "gowragnarok.jpeg"
+    },
+    {
+        
+        "id": 3,
+        "consola": "Playstation 4",
+        "titulo": "Horizon Forbidden West",
+        "precio": 18000,
+        "imagen": "horizon.jpeg"
+    },
+    {
+        "id": 4,
+        "consola": "XBOX X",
+        "titulo": "Resident Evil Village",
+        "precio": 15000,
+        "imagen": "resident.jpeg"
+    },
+    {
+        "id": 5,
+        "consola": "XBOX X",
+        "titulo": "DOOM Eternal",
+        "precio": 21000,
+        "imagen": "doom.jpeg"
+    },
+    {
+        "id": 6,
+        "consola": "Nintendo Switch",
+        "titulo": "Super Mario Odyssey",
+        "precio": 9100,
+        "imagen": "mario.jpeg"
+    },
+    {
+        "id": 7,
+        "consola": "Nintendo Switch",
+        "titulo": "The Legend of Zelda: Breath of the Wild",
+        "precio": 9500,
+        "imagen": "zelda.jpeg"
+    }
+]
