@@ -56,19 +56,25 @@ function cargarProductosCarrito(array){
     array.forEach((productoCarrito)=>{
         
         bodyCarrito.innerHTML += `
-        <div class="card border-primary mb-3" id ="productoCarrito${productoCarrito.id}" style="max-width: 540px;">
-            <img class="card-img-top" height="300px" src="assets/${productoCarrito.imagen}" alt="${productoCarrito.titulo}">
-            <div class="card-body">
-                    <h4 class="card-title">${productoCarrito.titulo}</h4>
-                
-                    <p class="card-text">Precio: $${productoCarrito.precio}</p> 
-                    <p class="card-text">Total de unidades: ${productoCarrito.cantidad}</p> 
-                    <p class="card-text">Sub Total: $${productoCarrito.precio * productoCarrito.cantidad}</p> 
-
-                    <button class= "btn btn-success" id="botonSumarUnidad${productoCarrito.id}"><i class=""></i>+1</button>
-                    <button class= "btn btn-danger" id="botonEliminarUnidad${productoCarrito.id}"><i class=""></i>-1</button>
-                    <button class= "btn btn-danger" id="botonEliminar${productoCarrito.id}"><i class="fas fa-trash-alt"></i></button>
-            </div>    
+        <div id ="productoCarrito${productoCarrito.id}"class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="assets/${productoCarrito.imagen}" class="img-fluid rounded-start" alt="${productoCarrito.titulo}">
+                </div>
+                <div class="col-md-6">
+                <div class="card-body">
+                    <h5 class="card-title">${productoCarrito.titulo}</h5>
+                    <h5 class="card-text">Consola: ${productoCarrito.consola}</h5>
+                    <p class="card-text">Total de unidades: ${productoCarrito.cantidad}</p>
+                    <p class="card-text"><small class="text-muted">Sub Total: $${productoCarrito.precio * productoCarrito.cantidad}</small></p>
+                </div>
+                </div>
+                    <div class="col-md-2">
+                    <button class= "btn btn-success mt-3" id="botonSumarUnidad${productoCarrito.id}"><i class=""></i>+1</button>
+                    <button class= "btn btn-danger mt-1" id="botonEliminarUnidad${productoCarrito.id}"><i class=""></i>-1</button>
+                    <button class= "btn btn-danger mt-1" id="botonEliminar${productoCarrito.id}"><i class="fas fa-trash-alt"></i></button>
+                    </div>
+            </div>
         </div>
         `
         })
