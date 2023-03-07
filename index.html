@@ -16,46 +16,53 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">GameStore</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon "></span>
-          </button>
+  <nav class="navbar bg-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Phantom GameStore - Tienda de juegos</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Phantom GameStore</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            
+            <li class="nav-item">
+              <a id= "botonCarrito" class="nav-link" data-bs-toggle="modal" data-bs-target="#carritoModal"href="#carritoModal">Carrito de compras</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Menu
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" id="agregarJuego" data-bs-toggle="modal" data-bs-target="#modalAgregarJuego" href="#">Agregar Juego</i></a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Mostrar catalogo segun:</a></li>
+                <ul>
+                  <select id="selectOrden" class="form-select form-select-sm" aria-label=".form-select-sm example">
+                    <option selected>Seleccionar opcion</option>
+                    <option value="1">Menor precio</option>
+                    <option value="2">Mayor precio</option>
+                    <option value="3">A-Z</option>
+                  </select>
+                </ul>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex mt-3" role="search">
+            <input id= "barraBusqueda" class="form-control me-2" type="search" placeholder="Buscar por titulo/consola" aria-label="Search">
+            
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
       
-          <div class="collapse navbar-collapse" id="navbarColor01">
-            <ul class="navbar-nav me-auto">
-              <form class="d-flex">
-                <input id="barraBusqueda"class="form-control me-2" placeholder="Busqueda por titulo/consola" aria-label="Search">
-                
-              </form> 
-              
-            </ul>
-            <ul>
-              <select id="selectOrden" class="form-select form-select-sm" aria-label=".form-select-sm example">
-                <option selected>Ordenar catalogo por:</option>
-                <option value="1">Menor precio</option>
-                <option value="2">Mayor precio</option>
-                <option value="3">A-Z</option>
-              </select>
-            </ul>
-            <ul style="list-style: none;"className="navbar-nav me-auto">  
-              <li className="nav-item " >
-                  <a id="botonCarrito" data-bs-toggle="modal" data-bs-target="#carritoModal" class="btn btn-secondary"><i class="fas fa-shopping-cart fa-1x"></i></a>
-              </li>
-          </ul> 
-          </div>
-          <div>
-              
-          </div>
-        </div> 
-      </nav>
-      
-      <div class="container m-4">
-        <div class="row">
-            <div class="col-3">
-                <button id="agregarJuego" data-bs-toggle="modal" data-bs-target="#modalAgregarJuego" class="btn btn-success mb-4">Agregar Juego</button>
-            </div>
             
        <div class="col-3">
        </div>
@@ -65,7 +72,7 @@
   
             </div>
         </div>
-        <div class= "col-3" id="fecha">hola</div>
+        <div class= "col-3 mt-4" id="fecha"></div>
         <div id="reloj"></div>
     </div>
     
