@@ -168,7 +168,7 @@ function mostrarCatalogo(array){
         let nuevodivJuegos = document.createElement("div")
         nuevodivJuegos.className = "col-12 col-md-6 col-lg-4 my-3"
         nuevodivJuegos.innerHTML = `
-        <div id="${juego.id}" class="card" style="width: 18rem;">
+        <div id="${juego.id}" class="card card-dark" style="width: 18rem;">
             <img class="card-img-top img-fluid" style="height: 200px;"src="assets/${juego.imagen}" alt="${juego.titulo} de ${juego.consola}">
             <div class="card-body">
                 <h4 class="card-title">${juego.titulo}</h4>

@@ -23,6 +23,17 @@
   body.dark {
     background-color: #292c35;
   }
+.card-dark{
+    background-color: #292c35;
+    border-color: blanchedalmond;
+    color:blanchedalmond;
+}
+
+.menu-dark {
+    background-color:#292c35 ;
+    color:blanchedalmond;
+}
+  
   .checkbox {
     opacity: 0;
     position: absolute;
@@ -52,7 +63,7 @@
     transition: transform 0.2s linear;
   }
   
-  /*  target the elemenent after the label*/
+
   .checkbox:checked + .label .ball{
     transform: translateX(24px);
   }
@@ -65,5 +76,5 @@
     color: yellow;
   }
 
-
+  
 
