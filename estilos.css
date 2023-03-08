@@ -22,6 +22,7 @@
   }
   body.dark {
     background-color: #292c35;
+    color: blanchedalmond;
   }
 .card-dark{
     background-color: #292c35;
@@ -32,7 +33,14 @@
 .menu-dark {
     background-color:#292c35 ;
     color:blanchedalmond;
+    border-color: blanchedalmond;
 }
+.menu-dark a {
+color:blanchedalmond
+}
+.menu-dark li a {
+    color:blanchedalmond
+    }
   
   .checkbox {
     opacity: 0;
